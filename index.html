@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Clone-Anasayfa</title>
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- css link-->
+      <link rel="stylesheet" href="./style/style.css">
+      <!-- * Bs Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+</head>
+<body class="feed">
+   <!--sıl kısım-->
+   <aside class="left-bar">
+    <nav>
+      <!--logo-->
+      <img src="./images/x-logo .png" alt="logo"/>
+
+      <!--nav elemanları-->
+      <a href="#">
+        <i class="bi bi-house-fill"></i>
+        <span>Ana Sayfa</span>
+      </a>
+      <a href="#">
+        <i class="bi bi-search"></i>
+        <span>Keşfet</span>
+      </a>
+      <a href="#">
+        <i class="bi bi-bell-fill"></i>
+        <span>Bildirimler</span>
+      </a>
+      <a href="#">
+        <i class="bi bi-bookmarks-fill"></i>
+        <span>Yer İşaretleri</span>
+      </a>
+      <a href="#">
+        <i class="bi bi-envelope-fill"></i>
+        <span>Mesajlar</span>
+      </a>
+      <button>
+        <i class="bi bi-send-fill"></i>
+        <span>Gönder</span>
+      </button>
+    </nav>
+    <!--user info-->
+    <div class="user-info">
+      <img src="./images/default.png" alt="user-image" id="user-image"/>
+      <div>
+        <p id="user-name"></p>
+        <p id="user-tagname"></p>
+        <button id="logout-btn">
+          <i class="bi bi-door-open-fill"></i>
+          <span>Çıkış Yap</span>
+        </button>
+      </div>
+    </div>
+   </aside>
+   <!--tweet kısmı-->
+   <main>
+    <!--header-->
+    <header>Ana Sayfa</header>
+
+    <!--form-->
+    <form id="post-tweets">
+      <img src="./images//x-logo .png" id="profile-pic" alt="profile-image" />
+      <div class="input-area">
+        <input type="text" placeholder="Neler Oluyor"/>
+        <div class="buttons">
+          <button>Tweetle</button>
+        </div>
+      </div>
+    </form>
+    <!--tweeet alanı-->
+    <div class="tweets-area">
+        <!--    
+    
+      <div class="tweet">
+        
+        <div class="body">
+          <div class="user">
+            <img class="user-image" src="./images/x-logo .png" alt="user-image"/>
+            <div class="info">
+              <h5>Yunus Emre Oral</h5>
+              <p>@yeo038</p>
+              <p>an hour ago</p>
+            </div>
+            <i class="bi bi-three-dots"></i>
+          </div>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officia inventore, dicta et facere commodi temporibus autem laborum deserunt vitae atque. Ea deserunt sapiente eius eos quas vel. Incidunt, dolorum.</p>
+             <img src="./images/x-logo .png" alt="user-image"/>
+          </div>
+          <div class="buttons">
+            <button class="bi bi-chat"><span> 38</span></button>
+            <button class="bi bi-recycle"><span> 24</span></button>
+            <button class="bi bi-heart"><span> 76</span></button>
+            <button class="bi bi-bookmark"><span> 97</span></button>
+          </div>
+        </div>
+      </div> -->
+     
+       
+    </div>
+   </main>
+   <!--haberler kısmı-->
+   <aside class="news">
+    <h1>Haberler</h1>
+   </aside>
+    <!-- * Moment Js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+   <!--js baglantı-->
+   <script src="./js/main.js" type="module"></script>
+</body>
+</html>
